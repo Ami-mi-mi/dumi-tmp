@@ -9,7 +9,7 @@ import {
   PieChartOutlined,
 } from '@ant-design/icons';
 import 'antd/dist/antd.css';
-
+import './index.css';
 import { NavbarList } from './mock';
 
 const { SubMenu } = Menu;
@@ -25,7 +25,7 @@ export default ({ title }: { title: string }) => {
             <Menu.SubMenu
               key={item.navkey}
               icon={<FontSizeOutlined />}
-              title={<span>{item.name}</span>}
+              title={item.name}
             >
               {result(item.children)}
             </Menu.SubMenu>,
